@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration form</title>
+    <link rel="icon" href="../marksheet.png">
+    <style>
+                body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        fieldset {
+            background-color: #5d54cd;
+            width: 600px;
+        }
+        h1 {
+            color: blue;
+            background-color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div id="form-wrapper">
+        <h1>Student Registration Form</h1>
+    <fieldset>
+        
+    <form>
+        
+        <table border="0">
+            <tr>
+                <td>
+                    <label for="text">First Name</label>
+                </td>
+                <td>
+                    <input type="text" id="text" autofocus placeholder="First Name">
+                </td>
+                <td>
+                    (max 30 character a-z and A-Z)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="last">Last Name</label>
+                </td>
+                <td>
+                    <input type="text" id="last" placeholder="Last Name">
+                </td>
+                <td>
+                    (max 30 character a-z and A-Z)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dob">Date Of Birth</label>
+                </td>
+                <td>
+                    <input type="date" id="dob" style="width: 165px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email ID</label>
+                </td>
+                <td>
+                    <input type="email" id="email" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="number">Mobile Number</label>
+                </td>
+                <td>
+                    <input type="number" id="number" required>
+                </td>
+                <td>
+                    (10 digit number)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="radio">Gender</label>
+                </td>
+                <td>
+                    Male<input type="radio" id="radio" name="arz">
+                    FeMale<input type="radio" name="arz">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Address">Address</label>
+                </td>
+                <td colspan="2">
+                    <textarea name="Address" id="Address" cols="40" rows="5" style="resize: none;"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="City">City</label></td>
+                <td><input type="text" id="City"></td>
+                <td>(max 30 character a-z and A-Z)</td>
+            </tr>
+            <tr>
+                <td><label for="PIN Code">PIN Code</label></td>
+                <td><input type="text" id="PIN Code"></td>
+                <td>(6 digit number)</td>
+            </tr>
+            <tr>
+                <td><label for="State">State</label></td>
+                <td><input type="text" id="State"></td>
+                <td>(max 30 character a-z and A-Z)</td>
+            </tr>
+            <tr>
+                <td><label for="Country">Country</label></td>
+                <td><input type="text" id="Country" value="India"></td>
+            </tr>
+            <tr>
+                <td><label for="Hobbies">Hobbies</label></td>
+                <td colspan="2">
+                    <label for="Drawing">Drawing</label><input type="checkbox" id="Drawing">
+                    <label for="Singing">Singing</label><input type="checkbox" id="Singing">
+                    <label for="Dancing">Dancing</label><input type="checkbox" id="Dancing">
+                    <label for="Sketching">Sketching</label><input type="checkbox" id="Sketching">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2">
+                    <label for="Others">Others</label> <input type="checkbox" id="Others"><input type="text"
+                        id="Hobbies">
+                </td>
+            </tr>
+            <!-- <tr>
+                <td><label for="">Qualification</label></td>
+                <th>SI.No</th>
+                <th>Examination</th>
+                <th>Board</th>
+                <th>Percentage</th>
+                <th>year of Passing</th>
+            </tr> -->
+        </table>
+        <Table border="0">
+            <tr>
+                <td><label for="">Qualification</label></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th>SI.No</th>
+                <th>Examination</th>
+                <th>Board</th>
+                <th>Percentage</th>
+                <th>year of Passing</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td>Class X</td>
+                <td><input type="text" style="width: 150px;"></td>
+                <td><input type="text" style="width: 150px;"></td>
+                <td><input type="text" style="width: 150px;"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>2</td>
+                <td>Class XII</td>
+                <td><input type="text" style="width: 150px;"></td>
+                <td><input type="text" style="width: 150px;"></td>
+                <td><input type="text" style="width: 150px;"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>3</td>
+                <td>Graduation</td>
+                <td><input type="text" style="width: 150px;"></td>
+                <td><input type="text" style="width: 150px;"></td>
+                <td><input type="text" style="width: 150px;"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>4</td>
+                <td>Masters</td>
+                <td><input type="text" style="width: 150px;"></td>
+                <td><input type="text" style="width: 150px;"></td>
+                <td><input type="text" style="width: 150px;"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td align="center">(10 char max)</td>
+                <td align="center">(10 char max)</td>
+                <td></td>
+            </tr>
+        </Table>
+        <table border="0">
+            <tr>
+                <td><label for="">Courses <br> Applied &nbsp; For</label></td>
+                <TD></TD>
+                <TD></TD>
+                <TD></TD>
+                <TD>
+                    <label for="BCA">BCA</label> <input type="radio" id="BCA" name="course">
+                    <label for="B.Com ">B.Com </label><input type="radio" id="B.Com " name="course">
+                    <label for="B.Sc">B.Sc</label> <input type="radio" id="B.Sc" name="course">
+                    <label for="B.A ">B.A </label><input type="radio" id="B.A " name="course"></TD>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><input type="submit" value="SUBMIT"></td>
+                <td><input type="submit" value="RESET"></td>
+            </tr>
+        </table>
+    </form>
+</fieldset>
+</div>
+</body>
+
+</html>
